@@ -1,0 +1,98 @@
+<style>
+  div {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background:linear-gradient(35deg, #CCFFFF,#FFCCCC);
+  }
+  .ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+  }
+  #ball2 {
+    left: 65%;
+ transform: scale(1.5);
+  }
+  #ball1:hover{
+  transform: scale(3.1);
+}
+  #ball4 {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+
+  #rect {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position: relative;
+animation-name:rainbow;
+animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+ @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+left:0px;
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+left:25px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+left:-25px;
+    }
+  }
+
+</style>
+
+<div></div>
+<div class="ball" id= "ball1"></div>
+<div class="ball" id= "ball2"></div>
+<div class="ball" id= "ball4"></div>
+<div id="rect"></div>
+
